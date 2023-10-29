@@ -3,60 +3,85 @@
 \usepackage[lmargin=3cm,tmargin=3cm,rmargin=2cm,bmargin=2cm]{geometry}
 \usepackage[onehalfspacing]{setspace}
 \usepackage[brasil]{babel}
+\usepackage{lipsum}
 \usepackage{enumerate}
+\usepackage{amsfonts, amsmath, amssymb}
 \newcounter{questao}
 \setcounter{questao}{1}
 
 \newcommand{\quest}[1]{
-\vspace{.5cm}
-\noindent \textbf{Questão \thequestao. [{\small #1 pnt}] \stepcounter{questao}}
+    \vspace{.5cm}
+    \noindent \textbf{Questão \thequestao.[{\small #1 pnt}]\stepcounter{questao}}
 }
+
 \everymath{\displaystle}
 
 \newcommand{\opt}[5]{
-\begin{enumerate}[(a)]
-\item #1
-\item #2
-\item #3
-\item #4
-\item #5
-\end{enumerate}
+    \begin{enumerate}[(a) ]
+        \item #1
+        \item #2
+        \item #3
+        \item #4
+        \item #5
+    \end{enumerate}
 }
+
 
 \begin{document}
 
-\quest{1,5} Seja uma função afim $f(x)$, cuja a forma é $f(x)=ax+b$, com $a\in \mathbf{R}, b\in \mathbf{R}$ e $a \neq 0.$ Se $f(-3) = 3$ e $f(3)= -1$, os valores de $\mathbf{a}$ e $\mathbf{b}$, são respectivamente: \bigskip
+    \quest{1,5}Seja uma função afim $f(x)$, cuja a forma é $f(x)=ax+b$, com $a\in \mathbb{R}, b\in \mathbb{R}$ e $a \neq 0.$ Se $f(-3) = 3$ e $f(3)= -1$, os valores de $\mathbf{a}$ e $\mathbf{b}$, são respectivamente: \bigskip
 
-\noindent $(\ \ ) \ 2 \textit{ e } 9$ 
-\hfill$(\ \ ) \ 1 \textit{ e } -4$
-\hfill$(\ \ ) \ \frac{1}{3} \textit{ e } \frac{3}{5}$
-\hfill$(\ \ ) \ 2 \textit{ e } -7$
-\hfill$(\ \ ) \ \frac{-2}{3} \textit{ e } 1$
-
-
-\quest{1,0} Um economista observa os lucros das
-empresas $A$ e $B$ do primeiro ao quarto mês de atividades e chega à conclusão que, para este período, as equações que relacionam o lucro, em reais, e o tempo, em meses, são $L_{A}(t) = 3t-1$ e $L_{B}(t) = 2t+9$. Considerando-se que essas equações também são válidas para o período do quinto ao vigésimo quarto mês de atividades, o mês em que as empresas terão o mesmo lucro será o 
-
-\opt{vigésimo.}{décimo sétimo.}{décimo terceiro.}{décimo.}{oitavo.} \\
+    \noindent $(\ \ ) \ 2 \textrm{ e }9$
+    \hfill$(\ \ ) \ 1 \textrm{ e }-4$
+    \hfill$(\ \ ) \ $ $\dfrac{1}{3} \textrm{ e }{\dfrac{3}{5}}$
+    \hfill$(\ \ ) \ 2 \textrm{ e }-7$
+    \hfill$(\ \ ) \ $ $\dfrac{-2}{3} \textrm{ e } 1$
 
 
+    \quest{1,0}Um economista observa os lucros das
+    empresas $A$ e $B$ do primeiro ao quarto mês de atividades e chega à conclusão que, para este período, as equações que relacionam o lucro, em reais, e o tempo, em meses, são $L_{A}(t) = 3t-1$ e $L_{B}(t) = 2t+9$. Considerando-se que essas equações também são válidas para o período do quinto ao vigésimo quarto mês de atividades, o mês em que as empresas terão o mesmo lucro será o \bigskip
 
-\quest{1,5}  Um reservatório de água com capacidade para 20 mil litros encontra-se com 5 mil litros de água num instante inicial $(t)$ igual a zero, em que são abertas duas torneiras. A primeira delas é a única maneira pela qual a água entra no reservatório, e ela despeja $10l$ de água por minuto; a segunda é a única maneira de a água sair do reservatório. A razão entre a quantidade de água que entra e a que sai, nessa ordem, é igual a $\frac{5}{4}$. Considere que $Q(t)$ seja a expressão que
-indica o volume de água, em litro, contido no reservatório no instante $t$, dado em minuto, com $t$ variando de $0$ a $7.500$.\\ 
-A expressão algébrica para $Q(t)$ é 
-
-\opt{$5.000+2t$}{$5.000-8t$}{$5.000-2t$}{$5.000+10t$}{$5.000-2,5t$}
-
-
-\quest{2,0} Duas torneiras são utilizadas para encher um tanque vazio.
-Sabendo que sozinhas elas levam 10 horas e 15 horas, respectivamente, para enchê-lo.
-Quanto tempo às duas torneiras juntas levam para encher o tanque?\\
-
-\opt{6 horas.}{12 horas e 30 minutos.}{25 horas.}{8 horas e 15 minutos.}{3 horas}
+    \opt{vigésimo.}
+    {décimo sétimo.}
+    {décimo terceiro.}
+    {décimo.}
+    {oitavo.}
 
 
-\quest{2,0} 
+    \quest{1,5}Um reservatório de água com capacidade para 20 mil litros encontra-se com 5 mil litros de água num instante inicial $(t)$ igual a zero, em que são abertas duas torneiras. A primeira delas é a única maneira pela qual a água entra no reservatório, e ela despeja $10l$ de água por minuto; a segunda é a única maneira de a água sair do reservatório. A razão entre a quantidade de água que entra e a que sai, nessa ordem, é igual a $\frac{5}{4}$. Considere que $Q(t)$ seja a expressão que
+    indica o volume de água, em litro, contido no reservatório no instante $t$, dado em minuto, com $t$ variando de $0$ a $7.500$.\\
+    A expressão algébrica para $Q(t)$ é:
 
-\opt{}{}{}{}{}
+    \opt{$5.000+2t$}
+    {$5.000-8t$}
+    {$5.000-2t$}
+    {$5.000+10t$}
+    {$5.000-2,5t$}
+
+    \newpage
+
+    \quest{2,0}Duas torneiras são utilizadas para encher um tanque vazio. Sabendo que sozinhas elas levam 10 horas e 15 horas, respectivamente, para enchê-lo. Quanto tempo às duas torneiras juntas levam para encher o tanque? \bigskip
+
+    \opt{6 horas.}
+    {12 horas e 30 minutos.}
+    {25 horas.}
+    {8 horas e 15 minutos.}
+    {3 horas}
+
+
+    \quest{2,0}Calcule os quadrados. \bigskip
+
+    \opt{$(2x+5)^2$}
+    {$(a^3b+ab^3)^2$}
+    {$\left(x^3-\dfrac{1}{2}\right)^2$}
+    {$\left(\dfrac{x^2+1}{x+8}\right)^2$}
+    {$(8-2x)^2$}
+
+    \quest{2,0}Sabendo que $x - \dfrac{1}{x} = 10 (com x \neq 0$), o valor de $x^2 + \dfrac{1}{x^2}$ é: \bigskip
+    \opt{98}{100}{20}{102}{50}
+
+    \newpage
+    \quest{1,0} O valor da expressão $\dfrac{1-x^8}{(1+x)\cdot(1+x^2)\cdot(1+x^4)}$, para $x=101$, é:
+    \opt{-100}{-10}{-10,1}{-101}{-1000}
 
 \end{document}
